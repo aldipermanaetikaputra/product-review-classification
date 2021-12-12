@@ -1,0 +1,15 @@
+{
+  "name": "microcredential",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/minimist": "^1.2.2",
+    "@types/node": "^16.11.9",
+    "axios": "^0.24.0",
+    "minimist": "^1.2.5",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  }
+}
