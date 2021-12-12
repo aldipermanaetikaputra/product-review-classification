@@ -164,10 +164,11 @@ function App() {
               </p>
               <p className="text-gray-500 text-base leading-relaxed dark:text-gray-400">
                 Klasifikasi akan menampilkan hasil <b>TIDAK DIKETAHUI</b> jika
-                lebih dari 40% (<u>ambang batas yang ditetapkan</u>) kata pada
-                ulasan yang diinput tidak dikenali oleh program atau jika hasil{" "}
-                <i>confidence</i> pada klasifikasi <b>tidak lebih dari 60%</b> (
-                <u>ambang batas yang ditetapkan</u>).
+                kata pada ulasan yang diinput <b>lebih dari 40%</b> (
+                <u>ambang batas yang ditetapkan</u>) tidak dikenali oleh program
+                atau jika hasil klasifikasi <b>tidak lebih dari 60%</b> (
+                <u>ambang batas yang ditetapkan</u>
+                ).
               </p>
               <p className="text-gray-500 text-base leading-relaxed dark:text-gray-400">
                 <div className="text-lg font-bold underline">BATASAN: </div>{" "}
