@@ -4,9 +4,6 @@ import server.preprocessing as preprocessing
 import server.model as model
 import server.data as data
 
-threshold_coverage = 0.6
-threshold_classification = 0.6
-
 app = Flask(__name__, static_folder="../html/static", template_folder="../html")
 
 @app.route('/')
@@ -23,6 +20,9 @@ def inference_review():
   processed = preprocessing.clean(text)
   tokenized = model.tokenize(processed)
   inferenced = model.inference(tokenized)
+
+  threshold_coverage = 0.6
+  threshold_classification = 0.6
 
   processed_length = len(processed.split(" ")) * 1.0
 
@@ -46,6 +46,15 @@ def inference_review():
   response.headers.add('Access-Control-Allow-Origin', '*')
   return response
 
+@app.route('/random', methods=['GET'])
+def random_review():
+    total = int(request.args.get('total'))
+    random = data.random_review(total).values.tolist()
+
+    response = jsonify(random)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
+
 @app.route('/evaluate', methods=['POST'])
 def model_evaluate():
     x = request.files.get('x')
@@ -57,13 +66,3 @@ def model_evaluate():
         "accuaration": round(scores[1] * 100),
         "test": data_test,
     })
-
-
-@app.route('/random', methods=['GET'])
-def random_review():
-    total = int(request.args.get('total'))
-    random = data.random_review(total).values.tolist()
-
-    response = jsonify(random)
-    response.headers.add('Access-Control-Allow-Origin', '*')
-    return response
