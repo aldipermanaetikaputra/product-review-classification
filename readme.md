@@ -4,7 +4,7 @@ This tool uses sentiment analysis to classify product reviews as negative or pos
 
 We use [Nestle Official Store](https://www.tokopedia.com/nestle-indonesia) and [Unilever Official Store](https://www.tokopedia.com/unilever) from Tokopedia Marketplace as our dataset to train this model. So there may be limitations on the reviews that can be used in this application.
 
-**LIVE DEMO: [Product Review Classification](https://www.google.com)**
+**LIVE DEMO: [Product Review Classification](https://microcredential-its-01.herokuapp.com)**
 
 You can try this app from the link above.
 
@@ -40,9 +40,14 @@ python -m pip install -r requirements.txt
 python wsgi.py
 ```
 
-You can access the app through http://localhost:5000/
+You can access the app through http://localhost:5000
 ![Preview](https://i.ibb.co/cczh02M/Jepretan-Layar-2021-12-12-pukul-17-40-55.png)
+
+![Preview Result](https://i.ibb.co/hcSq9jw/Jepretan-Layar-2021-12-12-pukul-19-46-14.png)
+Check the tutorial how to edit and build the front-end [here](./web).
 
 ## Deploy
 
 If you want to deploy this app to heroku, you need follow the instructions at https://devcenter.heroku.com/articles/git
+
+**DEPLOYED DEMO: [Product Review Classification at Heroku](https://microcredential-its-01.herokuapp.com)**

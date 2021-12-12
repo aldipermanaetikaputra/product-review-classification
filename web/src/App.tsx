@@ -385,12 +385,14 @@ function App() {
           >
             <HiInformationCircle />
           </button>
-          <button
-            type="button"
+          <a
+            href="https://github.com/aldipermanaetikaputra/product-review-classification"
+            target="_blank"
+            rel="noreferrer"
             className="opacity-60 hover:opacity-100 transition-opacity duration-200 "
           >
             <RiGithubFill />
-          </button>
+          </a>
         </div>
       </div>
     </div>

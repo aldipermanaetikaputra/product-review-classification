@@ -31,7 +31,7 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "craco build && mv build ../html",
+    "build": "craco build && rm -rf ../html && mv build ../html",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
