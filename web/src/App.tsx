@@ -180,7 +180,7 @@ function App() {
                 Tokopedia.
               </p>
               <p className="text-gray-500 text-base leading-relaxed dark:text-gray-400">
-                Tools ini dibuat oleh Kelompok 1 (ITS-01) untuk memenuhi tugas
+                Tools ini dibuat oleh Aldi Permana Etika Putra dari Kelompok 1 (ITS-01) untuk memenuhi tugas
                 besar{" "}
                 <b>Microcredential Certification - Associate Data Scientst</b>{" "}
                 oleh Kemenristekdikti.
